@@ -1,5 +1,12 @@
 var callback = function(){
-  // Handler when the DOM is fully loaded
+ xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        div.innerHTML = this.responseText;
+        document.body.prepend(div.querySelector('.header'));
+    }
+};
+xhttp.open("GET", "temlplate.html", true);
+xhttp.send();
   
   
 };
