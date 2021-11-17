@@ -6,7 +6,7 @@ var callback = function(){
         document.body.prepend(div.querySelector('.header'));
     }
 };
-xhttp.open("GET", "temlplate.html", true);
+xhttp.open("GET", "header.html", true);
 xhttp.send();
   
   
